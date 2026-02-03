@@ -10,6 +10,7 @@
     flex-direction: column;
     height: fit-content;
     min-height: $subnavHeight;
+    color: $white;
 
     @include media-query-xlarge {
       flex-direction: row;
@@ -36,13 +37,14 @@
       justify-content: center;
       gap: 8px;
       cursor: pointer;
+      color: $white;
 
       &-arrow {
         width: 8px;
         height: 8px;
         display: inline-flex;
         rotate: 45deg;
-        border: 1px solid $flamingo;
+        border: 1px solid $wonderland-gold;
         border-width: 0 2px 2px 0;
         margin-top: 0;
         margin-bottom: 4px;
@@ -85,6 +87,7 @@
         height: 100%;
         box-sizing: border-box;
         font-size: 16px;
+        color: $white;
 
         @include media-query-xlarge {
           max-width: 20% !important;
@@ -96,7 +99,7 @@
             transition: font-weight 0.3s ease-in-out;
 
             &:nth-child(1) {
-              border-color: $mist-s30;
+              border-color: $wonderland-gold;
             }
 
             &:nth-child(2) {
@@ -123,6 +126,7 @@
           font: inherit;
           cursor: pointer;
           background-color: $mist;
+          color: $white;
 
           @include media-query-xlarge {
             padding: 15px 40px;
@@ -153,12 +157,12 @@
           border: none;
 
           &:not(.active-item):hover {
-            color: $flamingo-s40;
+            color: $wonderland-gold;
             text-decoration: underline;
             text-underline-offset: 6px;
 
             & > * {
-              color: $flamingo-s40;
+              color: $wonderland-gold;
             }
           }
         }

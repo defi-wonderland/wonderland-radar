@@ -39,6 +39,7 @@
       margin-block: 0;
       margin-bottom: 16px;
       margin-left: 0;
+      color: $white;
 
       @include media-query-medium {
         font-size: 1.25rem;
@@ -60,14 +61,14 @@
         flex-basis: 0;
         text-align: center;
         padding: 0 4px;
-        border-bottom: 1px solid $mist;
+        border-bottom: 1px solid $mist-s30;
 
         &.active {
-          border-bottom: 3px solid $flamingo-s40;
-          color: $flamingo-s40;
+          border-bottom: 3px solid $wonderland-gold;
+          color: $wonderland-gold;
 
           &:hover {
-            color: $link-hover;
+            color: $wonderland-pink;
           }
         }
 
@@ -85,6 +86,7 @@
           box-sizing: border-box;
           border: 1px solid transparent;
           border-width: 0px 1px;
+          color: $white;
 
           display: -webkit-box;
           line-height: 1.75rem;
@@ -99,6 +101,7 @@
 
           &:hover {
             border-color: transparent !important;
+            color: $wonderland-gold;
           }
         }
       }

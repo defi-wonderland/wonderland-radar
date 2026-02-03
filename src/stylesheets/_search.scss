@@ -63,12 +63,22 @@
     }
 
     &__input {
-      color: $wave;
+      color: $white;
       height: 48px;
       margin-bottom: 30px;
-      background: #edf1f3 url(images/search-active-wave.svg) no-repeat 98% center;
+      background: $mist url(images/search-active-wave.svg) no-repeat 98% center;
       font-family: $baseFontFamily;
       scroll-margin-top: $subnavHeight;
+      border: 1px solid $mist-s30;
+
+      &::placeholder {
+        color: $wonderland-text-secondary;
+      }
+
+      &:focus {
+        outline: 2px solid $wonderland-gold;
+        border-color: $wonderland-gold;
+      }
 
       @include media-query-medium {
         height: 100%;
@@ -81,20 +91,22 @@
   ul.ui-autocomplete {
     max-height: 196px !important;
     z-index: 999;
+    background-color: $mist;
+    border: 1px solid $mist-s30;
 
     li div {
       height: 48px;
       display: flex;
       align-items: center;
       padding-left: 16px;
-      border-bottom: 1px solid #edf1f3;
+      border-bottom: 1px solid $mist-s20;
       font-family: $baseFontFamily;
       font-size: 16px;
-      color: $black;
+      color: $white;
 
       &.ui-state-active {
-        background-color: $mist !important;
-        color: $black !important;
+        background-color: $mist-s10 !important;
+        color: $white !important;
 
         &:active {
           background-color: $mist-light !important;

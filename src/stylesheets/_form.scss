@@ -1,9 +1,11 @@
+@import 'colors';
+
 .input-sheet {
   margin: 60px auto;
 
   p {
     font-weight: 100;
-    color: $black;
+    color: $wonderland-text-secondary;
     font-size: 18px;
   }
 
@@ -26,7 +28,7 @@
   .input-sheet__banner {
     background-image: url('/images/tech-radar-landing-page-wide.png');
     background-repeat: no-repeat;
-    background-color: $grey-light;
+    background-color: $mist;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -45,8 +47,13 @@
     }
 
     a {
-      color: $white;
-      border-bottom-color: $white;
+      color: $wonderland-gold;
+      border-bottom-color: $wonderland-gold;
+
+      &:hover {
+        color: $wonderland-pink;
+        border-bottom-color: $wonderland-pink;
+      }
     }
   }
 
@@ -62,11 +69,12 @@
       background-color: transparent;
       margin: 0;
       padding: 0;
+      color: $white;
     }
   }
 
   input[type='text'] {
-    border-bottom: 2px solid $grey-even-darker;
+    border-bottom: 2px solid $mist-s30;
     display: block;
     font-size: 18px;
     margin-bottom: 30px;
@@ -74,11 +82,17 @@
     transition:
       box-shadow 0.3s,
       border 0.3s;
+    background-color: $mist;
+    color: $white;
+
+    &::placeholder {
+      color: $wonderland-text-secondary;
+    }
 
     &:focus,
     &.focus {
       outline: none;
-      border-bottom: 2px solid $grey-even-darker;
+      border-bottom: 2px solid $wonderland-gold;
       box-shadow: none;
     }
   }

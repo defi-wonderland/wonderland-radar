@@ -10,6 +10,7 @@
   p {
     font-weight: bold;
     margin: 0;
+    color: $wonderland-text-secondary;
   }
 
   .loader-text {
@@ -20,6 +21,7 @@
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 1rem;
+      color: $white;
     }
   }
 }
@@ -32,6 +34,7 @@
   p {
     margin-top: 88px;
     text-align: center;
+    color: $wonderland-text-secondary;
   }
 
   p.with-error {
@@ -48,21 +51,26 @@
     input#document-input {
       font-family: $baseFontFamily;
       background-color: $mist;
-      border: 1px solid #d5d9db;
+      border: 1px solid $mist-s30;
       letter-spacing: 0.06px;
       height: 48px;
       margin-bottom: 20px;
-      color: $black;
+      color: $white;
       font-size: 18px;
 
       &::placeholder {
-        color: #3c606f;
+        color: $wonderland-text-secondary;
+      }
+
+      &:focus {
+        outline: 2px solid $wonderland-gold;
+        border-color: $wonderland-gold;
       }
     }
 
     input[type='submit'] {
-      background-color: $button-normal;
-      color: $white;
+      background-color: $wonderland-gold;
+      color: $wonderland-dark;
       font-size: 20px;
       font-family: $baseFontFamily;
       line-height: 24px;
@@ -72,8 +80,15 @@
       margin-bottom: 18px;
       border: none;
       cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: $wonderland-pink;
+        color: $white;
+      }
+
       &:focus {
-        outline: auto;
+        outline: 2px solid $wonderland-purple;
       }
     }
     input:disabled {

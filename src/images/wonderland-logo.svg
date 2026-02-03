@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <defs>
+    <linearGradient id="wonderland-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#625cbf"/>
+      <stop offset="50%" style="stop-color:#c55fa3"/>
+      <stop offset="100%" style="stop-color:#fecc40"/>
+    </linearGradient>
+  </defs>
+  <!-- Crown icon -->
+  <path d="M4 28L8 12L16 20L24 8L32 20L40 12L44 28H4Z" fill="url(#wonderland-gradient)"/>
+  <rect x="4" y="30" width="40" height="4" rx="1" fill="url(#wonderland-gradient)"/>
+  <!-- Wonderland text -->
+  <text x="52" y="28" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Wonderland</text>
+</svg>

@@ -16,7 +16,6 @@
 @import 'layout';
 @import 'landingpage';
 @import 'loader';
-@import 'screen';
 @import 'pdfPage';
 
 :root {
@@ -33,6 +32,8 @@
   body {
     font: 18px 'Open Sans';
     opacity: 0;
+    background-color: $wonderland-dark;
+    color: $white;
     @if $UIRefresh2022 {
       font-family: $baseFontFamily;
       opacity: 1;
@@ -42,6 +43,7 @@
         font-family: 'Bitter', serif;
         text-transform: none;
         letter-spacing: normal;
+        color: $white;
 
         @include media-query-medium {
           font-size: 2rem;
@@ -66,6 +68,7 @@
         font-family: 'Inter', serif;
         text-transform: none;
         letter-spacing: normal;
+        color: $white;
 
         @include media-query-medium {
           font-size: 1.25rem;
@@ -91,6 +94,7 @@
       p {
         font-size: 1rem;
         font-family: $baseFontFamily;
+        color: $wonderland-text-secondary;
 
         @include media-query-xxlarge {
           font-size: 1.125rem;
@@ -117,7 +121,7 @@
       font-size: 12px;
       display: block;
       padding: 12px;
-      background: $wave;
+      background: $wonderland-purple;
       color: $white;
       pointer-events: none;
       z-index: 20;
@@ -136,7 +140,7 @@
       box-sizing: border-box;
       font-size: 10px;
       width: 100%;
-      color: $wave;
+      color: $wonderland-purple;
       position: absolute;
       pointer-events: none;
     }

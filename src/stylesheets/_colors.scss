@@ -1,49 +1,66 @@
-$green: #86b782;
-$blue: #1ebccd;
-$orange: #f38a3e;
-$violet: #b32059;
-$pink: #ee0b77;
+// Wonderland Brand Colors
+$wonderland-dark: #0e152c;
+$wonderland-gold: #fecc40;
+$wonderland-purple: #625cbf;
+$wonderland-magenta: #c55fa3;
+$wonderland-pink: #e95b9b;
+$wonderland-white: #ffffff;
+$wonderland-text-secondary: rgba(255, 255, 255, 0.65);
 
+// Wonderland Gradient
+// linear-gradient(135deg, #625cbf 0%, #c55fa3 50%, #fecc40 100%)
+
+// Legacy color aliases (some components may still reference these)
+$green: $wonderland-purple;
+$blue: $wonderland-gold;
+$orange: $wonderland-magenta;
+$violet: $wonderland-pink;
+$pink: $wonderland-pink;
+
+// Grey scale
 $grey-darkest: #bababa;
 $grey-dark: #cacaca;
 $grey: #dadada;
-$grey-light: #eee;
+$grey-light: #1a2340; // Slightly lighter than wonderland-dark for subtle contrast
 $grey-lightest: #fafafa;
 $grey-even-darker: #d7d7d7;
 
 $white: #fff;
-$black: #000;
-$grey-text: rgb(51, 51, 51);
+$black: $wonderland-dark;
+$grey-text: rgba(255, 255, 255, 0.85);
 
 $grey-alpha-03: rgba(255, 255, 255, 0.3);
 
-// Brand colors for use across theme.
-$black: #000000; //onyx
-$white: #ffffff; //white
-$wave: #163c4d; //wave
-$wave-light: #6b8591; //wave-light
-$flamingo: #e16a7c; //flamingo
-$mist: #edf1f3; //mist (ededed)
-$sapphire: #47a1ad; //$sapphire
-$jade: #6b9e78; //jade
-$turmeric: #cc850a; //turmeric
-$amethyst: #634f7d; //amethyst
+// Brand colors for use across theme (mapped to Wonderland)
+$wave: $wonderland-dark;
+$wave-light: #3d4a6b; // Lighter shade of wonderland-dark
+$mist: #1a2340; // Dark mist for dark theme
+$mist-s30: #4a5568;
+$mist-s20: #2d3748;
+$mist-s10: #1e2a45;
+$mist-light: #141b2d;
 
-// Other colors
-$mist-s30: #71777d;
-$mist-s20: #d5d9db;
-$mist-s10: #e1e5e7;
-$mist-light: #f7fafc;
-$flamingo-s40: #bd4257;
+// Quadrant colors - Wonderland palette
+$sapphire: $wonderland-purple;     // Quadrant 1 (Techniques)
+$turmeric: $wonderland-gold;       // Quadrant 2 (Tools)
+$jade: $wonderland-magenta;        // Quadrant 3 (Platforms)
+$flamingo: $wonderland-pink;       // Quadrant 4 (Languages & Frameworks)
+$amethyst: $wonderland-purple;     // Used for hero banner
 
-$button-normal: $wave; //button color
-$button-disabled: #909090; //disabled state for links and buttons
+// Darker variants for blips (slightly darkened versions for better visibility)
+$sapphire-dark: #4e49a3;           // Darker purple
+$turmeric-dark: #d4a82d;           // Darker gold
+$jade-dark: #a34d87;               // Darker magenta
+$flamingo-dark: #c44a82;           // Darker pink
+$flamingo-s40: $wonderland-pink;
 
-$link-normal: $black; //links color
-$link-hover: #9b293c; //links hover state color
-$error-text: #d14234;
+// Button colors
+$button-normal: $wonderland-gold;
+$button-disabled: #909090;
 
-$flamingo-dark: #9b293c; //flamingo-dark
-$sapphire-dark: #1f8290; //$sapphire-dark
-$jade-dark: #517b5c; //jade-dark
-$turmeric-dark: #a06908; //turmeric-dark
+// Link colors
+$link-normal: $wonderland-gold;
+$link-hover: $wonderland-pink;
+
+// Error text
+$error-text: #ff6b6b;
