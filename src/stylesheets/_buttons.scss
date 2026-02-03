@@ -28,6 +28,7 @@
       height: 48px;
       margin: 0 15px 32px;
       cursor: pointer;
+      transition: all 0.2s ease;
 
       @include media-query-medium {
         margin: 0 15px;
@@ -44,11 +45,15 @@
     }
 
     &__wave-btn {
-      background-color: $wave;
+      background-color: $wonderland-purple;
+
+      &:hover {
+        background-color: lighten($wonderland-purple, 10%);
+      }
     }
 
     &__flamingo-btn {
-      background-color: $flamingo-s40;
+      background-color: $wonderland-pink;
       color: $white;
 
       display: inline-flex;
@@ -62,6 +67,7 @@
       font-size: 20px;
 
       &:hover {
+        background-color: lighten($wonderland-pink, 10%);
         color: $white;
       }
     }

@@ -16,16 +16,19 @@
       }
       p {
         margin: 0;
+        color: $wonderland-text-secondary;
       }
     }
   }
 
   .error-title {
     font-weight: 400;
+    color: $white;
   }
 
   .error-subtitle {
     margin-top: -10px;
+    color: $wonderland-text-secondary;
   }
 
   .switch-account-button {
@@ -33,8 +36,8 @@
   }
 
   .switch-account-button-newui {
-    background-color: $button-normal;
-    color: $white;
+    background-color: $wonderland-gold;
+    color: $wonderland-dark;
     font-size: 20px;
     font-family: $baseFontFamily;
     line-height: 24px;
@@ -46,8 +49,14 @@
     border: none;
     text-transform: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: $wonderland-pink;
+      color: $white;
+    }
+
     &:focus {
-      outline: auto;
+      outline: 2px solid $wonderland-purple;
     }
   }
 }
@@ -57,10 +66,12 @@
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 20px;
+    color: $white;
   }
 
   .message p {
     font-size: 25px;
+    color: $wonderland-text-secondary;
   }
 }
 
@@ -71,6 +82,7 @@
     font-weight: 500;
     font-size: 30px;
     margin-bottom: 1px;
+    color: $white;
   }
 }
 
@@ -81,5 +93,13 @@
   span {
     padding: 0 40px;
     display: table-cell;
+  }
+
+  a {
+    color: $wonderland-gold;
+
+    &:hover {
+      color: $wonderland-pink;
+    }
   }
 }

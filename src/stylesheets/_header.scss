@@ -3,6 +3,7 @@
 
 header {
   text-align: center;
+  background-color: $wonderland-dark;
 }
 
 .radar-title,
@@ -16,7 +17,7 @@ header {
 }
 
 .radar-title {
-  background-color: $grey-light;
+  background-color: $mist;
   padding: 30px 0;
 
   display: table;
@@ -37,6 +38,7 @@ header {
       line-height: 0.8em;
       margin: 0;
       text-transform: uppercase;
+      color: $white;
     }
   }
 
@@ -76,7 +78,7 @@ header {
 }
 
 .home-link {
-  color: $pink;
+  color: $wonderland-gold;
   margin-bottom: 10px;
   line-height: normal;
   cursor: pointer;
@@ -95,8 +97,8 @@ header {
   cursor: pointer;
   transition: all 0.2s ease-out;
 
-  background-color: $grey-light;
-  color: $black;
+  background-color: $mist;
+  color: $white;
 
   &.no-capitalize {
     text-transform: none;
@@ -109,43 +111,43 @@ header {
 
     &.first {
       color: white;
-      background-color: $green;
+      background-color: $wonderland-purple;
     }
 
     &.second {
-      color: white;
-      background-color: $blue;
+      color: $wonderland-dark;
+      background-color: $wonderland-gold;
     }
 
     &.third {
       color: white;
-      background-color: $orange;
+      background-color: $wonderland-magenta;
     }
 
     &.fourth {
       color: white;
-      background-color: $violet;
+      background-color: $wonderland-pink;
     }
   }
 
   &.full-view {
     &.first {
-      background-color: $green;
+      background-color: $wonderland-purple;
       color: $white;
     }
 
     &.second {
-      background-color: $blue;
-      color: $white;
+      background-color: $wonderland-gold;
+      color: $wonderland-dark;
     }
 
     &.third {
-      background-color: $orange;
+      background-color: $wonderland-magenta;
       color: $white;
     }
 
     &.fourth {
-      background-color: $violet;
+      background-color: $wonderland-pink;
       color: $white;
     }
   }
@@ -164,6 +166,7 @@ header {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 10px;
+    color: $white;
   }
 
   .multiple-sheet-button {
@@ -171,16 +174,19 @@ header {
   }
 
   .search-radar {
-    border: 1px solid #aaa;
-    background-color: inherit;
+    border: 1px solid $mist-s30;
+    background-color: $mist;
     background-image: url('/images/search-logo-2x.svg');
     background-repeat: no-repeat;
     background-position: 10px;
+    color: $white;
   }
 
   input {
     padding-left: 35px;
     width: 275px;
+    background-color: $mist;
+    color: $white;
   }
 }
 
@@ -212,6 +218,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: $wonderland-dark;
 
     div {
       display: flex;
@@ -231,6 +238,7 @@ header {
         margin-right: 5px;
         font-family: $baseFontFamily;
         font-weight: 630;
+        color: $wonderland-text-secondary;
       }
 
       a {

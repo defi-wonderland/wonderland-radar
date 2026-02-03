@@ -1,13 +1,15 @@
+@import 'colors';
+
 .d3-tip {
   white-space: nowrap;
   line-height: 1;
   font-size: 12px;
   display: none;
   padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: $wonderland-purple;
+  color: $white;
   border-radius: 4px;
-  border-color: #000;
+  border-color: $wonderland-purple;
   pointer-events: none;
   z-index: 20;
 }
@@ -24,7 +26,7 @@
   font-size: 10px;
   width: 100%;
   line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
+  color: $wonderland-purple;
   position: absolute;
   pointer-events: none;
 }

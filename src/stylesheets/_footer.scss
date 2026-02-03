@@ -1,9 +1,11 @@
 @import 'layout';
 @import 'fonts';
+@import 'colors';
 
 #footer {
   text-align: center;
   clear: both;
+  background-color: $wonderland-dark;
 
   .footer-content {
     width: 50%;
@@ -14,6 +16,15 @@
       font-size: $baseFont;
       font-weight: $baseWeight;
       text-align: left;
+      color: $wonderland-text-secondary;
+
+      a {
+        color: $wonderland-gold;
+
+        &:hover {
+          color: $wonderland-pink;
+        }
+      }
     }
   }
 }
@@ -21,6 +32,7 @@
 @if $UIRefresh2022 {
   footer {
     margin-bottom: 40px;
+    background-color: $wonderland-dark;
 
     p {
       @include eight-column-layout-margin;
@@ -28,10 +40,19 @@
       font-weight: normal;
       margin-top: 30px;
       font-size: 16px !important;
+      color: $wonderland-text-secondary;
 
       @include media-query-large {
         font-size: 18px !important;
         text-align: center;
+      }
+
+      a {
+        color: $wonderland-gold;
+
+        &:hover {
+          color: $wonderland-pink;
+        }
       }
     }
   }
